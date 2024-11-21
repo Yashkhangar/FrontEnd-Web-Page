@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+          <!-- <div class="logo"><img src="D:/Projects/FirstProject/Images/Backgroundoors.avif" alt="Logo"></div> -->
+          <div class="logo">
+            <img src="D:/Projects/FirstProject/Images/BSS.png" />
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main class="mainbill">
+        <div class="billform" >
+            <div class="login">
+              <form action="" id="loginform">
+                <h1>Payement Gateway</h1>
+                <br><br>
+                <label for="UserName">Your Name</label>
+                <br>
+                <input type="text" placeholder="Enter user's name" required class="enter" id="loginuname">
+                <br><br>
+                <label for="Address">Address</label>
+                <br>
+                <input type="text" placeholder="Enter user's Address" required class="enter" id="address">
+                <br><br>
+                <label for="Phone">Your phone</label>
+                <br>
+                <input type="number" placeholder="Enter phone" required class="enter" id="phone">
+                <br><br>
+                <label for="cardno">Your card no.</label>
+                <br>
+                <input type="number" placeholder="1234 5678 1234 5555" required="12 number" class="enter" id="cardno">
+                <br><br>
+                <label for="expdate">Expiry date</label>
+                <br>
+                <input type="date" required class="enter" id="expdate">
+                <br><br>
+                <label for="cvv">CVV</label>
+                <br>
+                <input type="number" placeholder="123" required="3 number" class="enter" id="cvv">
+                <br><br>
+                <input type="submit" value="Submit" class="enter">
+                <br><br>
+                <input type="reset" value="Reset" class="enter">
+                <br><br>
+                <hr>
+               
+                <hr>
+                
+                <!-- <input type="search" value="Submit" class="enter"> -->
+              </form>
+              <script>
+                document.getElementById("loginform").addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    var loginuname = document.getElementById("loginuname").value;
+                    var address = document.getElementById("address").value;
+                    var phone = document.getElementById("phone").value;
+                    var cardno = document.getElementById("cardno").value;
+                    var expdate = document.getElementById("expdate").value;
+                    var cvv = document.getElementById("cvv").value;
+                    
+                    localStorage.setItem("loginuname", name);//The localStorage object allows you to save key/value pairs in the browser.
+                    localStorage.setItem("address", address);
+                    localStorage.setItem("phone", phone);
+                    localStorage.setItem("cardno", cardno );
+                    localStorage.setItem("expdate", expdate);
+                    localStorage.setItem("cvv", cvv);
+                    alert("Payment Made Successfully")
+                    window.location.href = "services.html" 
+                })
+              </script>
+            </div>
+        </div>
+      </main>
+      <footer class="background">
+        <p class="text-footer">
+          Copyright &copy; 2023 www.bcstech.com - All rights reserved 
+          <br>
+          Made with  &hearts; Yash
+        </p> 
+      </footer>
+</body>
+</html>

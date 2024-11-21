@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+.login{
+    background-color: white;
+    color: black;
+    height: 420px;
+    width: 340px;
+    border: 2px solid red;
+}
+.uname{
+    display: inline-grid;
+}
+.Ipassword{
+    display: inline-grid;
+}
+.login h1{
+    text-align: center;
+    font-size: 50px;
+}
+.username{
+    height: 80px;
+    margin: 16px;
+}
+
+.uname label{
+    margin: 5px 5px 2px 5px;
+    font-weight: 600;
+}
+.uname input{
+    margin: 5px;
+    border-radius: 5px;
+}
+.password{
+    height: 80px;
+    margin: 16px;
+}
+.Ipassword label{
+    margin: 5px 5px 2px 5px;
+    font-weight: 600;
+}
+.Ipassword input{
+    margin: 5px;
+    border-radius: 5px;
+}

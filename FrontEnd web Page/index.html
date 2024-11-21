@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+  </head>
+  <body >
+    <nav class="navbar background h-nav-resp">
+      <ul class="nav-list v-class-resp">
+        <!-- <div class="logo"><img src="D:/Projects/FirstProject/Images/Backgroundoors.avif" alt="Logo"></div> -->
+        <div class="logo">
+          <img src="D:/Projects/FirstProject/Images/BSS.png" />
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section class="background firstSection">
+      <div class="box-main">
+        <div class="fistHalf">
+          <p class="text-big">Building For The Better Future</p>
+          <p class="text-small">
+            Building for the betterment of the future is a noble and far-reaching goal that encompasses a wide range of endeavors aimed at improving the quality of life, fostering sustainable development, and addressing pressing global challenges
+          </p>
+          <div class="buttons">
+            <button class="btn"><a href="services.html">Subscribe</a></button>
+            <button class="btn"><a href="billpage.html">Login</a></button>
+          </div>
+        </div>
+        <div class="secondHalf">
+          <img src="D:/Projects/SecondProject/logo.png" alt="Image" />
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="paras">
+        <p class="sectiontag">Our Vision</p>
+        <p class="sectionsubtag">
+          At BCS Reliability, our vision is to be the industry leader and the go-to partner for businesses seeking unwavering continuity and security. We aspire to set the gold standard in the field of Business Continuity and Security by relentlessly pursuing innovation, excellence, and client satisfaction.
+          <br>
+          Our vision is to empower businesses to not only survive but also thrive in an increasingly complex and unpredictable environment. We are dedicated to being the driving force behind their success, and together, we will create a more secure and resilient future for all."
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://source.unsplash.com/900x900/?javascript,Computer,It,codding,Growth" alt="Thumbnail" class="imgFluid"/>
+      </div>
+    </section>
+    <section class="section left">
+      <div class="paras">
+        <p class="sectiontag">Our Mission</p>
+        <p class="sectionsubtag">
+          At BCS Reliability, our mission is to be the trusted partner that businesses turn to for safeguarding their operations, assets, and reputation. We are driven by a relentless commitment to ensure business continuity and security through tailored solutions and unwavering support.
+          <br>
+          Our mission at BCS Reliability is to be the unwavering support system that businesses can rely on in times of uncertainty. We are dedicated to equipping our clients with the tools, knowledge, and expertise needed to navigate challenges and secure their future success. Your continuity and security are at the heart of our mission.
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://source.unsplash.com/900x900/?company,industry,Finance,marketing" alt="Thumbnail" class="imgFluid"/>
+      </div>
+    </section>
+    <section class="section">
+      <div class="paras">
+        <p class="sectiontag text-big">Our Principles</p>
+        <p class="sectionsubtag text-small">
+          <b>Sustainability:</b> Prioritize sustainability in all aspects of development, including architecture, infrastructure, and resource management. Consider the environmental impact of projects and seek solutions that reduce carbon emissions, conserve resources, and promote eco-friendly practices.
+          <br>
+          <b>Inclusive Design:</b> Create spaces, products, and technologies that are accessible to all, regardless of age, ability, or background. Inclusive design ensures that no one is left behind and that the benefits of development are widely distributed.
+          <br>
+          <b>Education and Skill Development:</b> Invest in education and skill development programs to empower individuals with the knowledge and capabilities to thrive in a rapidly changing world. This includes promoting STEM (Science, Technology, Engineering, and Mathematics) education and vocational training.
+
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://source.unsplash.com/900x900/?coding ,apple" alt="Thumbnail" class="imgFluid"/>
+      </div>
+    </section>
+    <section class="contact">
+      <h1 class="text-center">Contact Us</h1>
+      <form class="form" id="form">
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+        <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your Phone" required>
+        <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email" required>
+              <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern" required></textarea>
+        <input type="submit" class="btn btn-dark" value="submit">
+      </form>
+      <script>
+        document.getElementById("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            localStorage.setItem("name", name);//The localStorage object allows you to save key/value pairs in the browser.
+            localStorage.setItem("phone", phone);
+            localStorage.setItem("email", email);
+            alert("Sent Successfully")
+            window.location.href = "billpage.html" //window.location.href returns the href (URL) of the current page
+        })
+    </script>
+    </section>
+    <footer class="background">
+      <p class="text-footer">
+
+        Copyright &copy; 2023 www.bcstech.com - All rights reserved 
+        <br>
+        Made with  &hearts; Yash 
+      </p> 
+    </footer>
+    <script src="js/resp.js"></script>
+  </body>
+</html>

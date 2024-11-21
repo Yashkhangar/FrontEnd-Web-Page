@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/* body{
+    background-image: url('Cloudbackup.jpeg');
+    background-size: cover;
+    
+} */
+.main{
+    height: 100%;
+    width: 92%;
+    margin: 4%;
+    background-color: antiquewhite;
+    background-image: url('productbag.jpeg');
+    background-size: cover;
+    border-radius: 25px
+}
+
+.lists{
+    padding: 25px 70px;
+    margin-bottom: 50px;
+}
+
+.insidemain{
+    padding: 15px 0;
+}
+
+.buynow{
+    text-align: center;
+}
+.buynow button{
+    font-size: 30px;
+    padding: 4px 18px;
+    border-radius: 12px; 
+}
+.buynow button a{
+    text-decoration: none;
+}
+button:hover{
+    background: thistle;
+}
+
+.price input{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 0 25px;
+}
+.price{
+    text-align: center;
+}
+
+
+
+
+
